@@ -92,6 +92,10 @@ public class Banker {
     static void request(int p, int[] req) {
         // basic checks
         for (int j = 0; j < m; j++) {
+            if (req[j] < 0) {
+                System.out.println("denied: negative request");
+                return;
+            }
             if (req[j] > need[p][j]) {
                 System.out.println("denied: more than needed");
                 return;
@@ -124,6 +128,10 @@ public class Banker {
 
     static void release(int p, int[] rel) {
         for (int j = 0; j < m; j++) {
+            if (rel[j] < 0) {
+                System.out.println("denied: negative release");
+                return;
+            }
             if (rel[j] > alloc[p][j]) {
                 System.out.println("cant release that much");
                 return;
