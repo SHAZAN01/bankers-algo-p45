@@ -1,0 +1,14 @@
+any other observations/findings that you want to mention in your experiment:
+
+- one weird observation we found during sainas testing is that if you input a negative number for a request, the program actually just grants it instead of throwing an error lol[cite: 3]. 
+- the s/o correctly blocks you if you try to release more resources than you actually hav allocated[cite: 4]
+- it also properly stops you from asking for more resources than what is currently available in the pool[cite: 4]
+- when a valid release happens,the available matrix updates perfectly to reflect the freed up resources[cite: 2]
+
+team contributions:
+- shazan: wrote the main java code, set up the matrix logic for the bankers algo, and ran the initial safe/unsafe state tests.
+- saina: pulled the repo locally, tested all the edge cases (invalid requests, resource limits, releasing), and documented the extra screenshots[cite: 2, 3, 4]
+
+- we both put on GitHub here the link: https://github.com/SHAZAN01/bankers-algo-p45
+
+just to be clear for the grading, both of us did all this work and testing manually. no ai was used by either of us for writing the code or doing the tests in this project.
